@@ -1,6 +1,6 @@
 # Rule34Video Tauri App
 
-**🚀 Current release:** v1.0.3 • **Updated:** 2026-05-09
+**🚀 Current release:** v1.0.3 • **Updated:** 2026-05-17
 
 A privacy-forward native wrapper for **rule34video.com** built with **Tauri 2** and **Rust**.
 

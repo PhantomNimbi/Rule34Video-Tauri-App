@@ -10,7 +10,7 @@
 - Network- and DOM-level ad blocking to reduce distractions and improve page load behavior.
 - Secure download interception with filename sanitization and safe save-path handling.
 - System tray integration on desktop platforms for background operation and quick restore.
-- Custom deep linking support via `virtualcustoms://` and mobile app links.
+- Custom deep linking support via `rule43video://` and mobile app links.
 - Child window and popup management on desktop to keep navigation controlled and secure.
 - Cross-platform support across Windows, macOS, Linux, and Android.
 - App installers and packages published for supported desktop platforms and Android.

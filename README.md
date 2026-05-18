@@ -17,22 +17,6 @@ The app includes:
 
 ---
 
-## Contents
-
-- [Rule34Video Tauri App](#virtual-customs-tauri-app)
-  - [Contents](#contents)
-  - [Overview](#overview)
-  - [Supported Platforms](#supported-platforms)
-  - [Quick Start](#quick-start)
-    - [Local development](#local-development)
-    - [Build the app locally](#build-the-app-locally)
-  - [Versioning helper](#versioning-helper)
-  - [Project Structure](#project-structure)
-  - [Documentation](#documentation)
-  - [Contributing](#contributing)
-  - [License](#license)
-
----
 
 ## Overview
 
@@ -58,14 +42,12 @@ This repository includes both the Tauri source and native platform build helpers
 ### Local development
 
 ```bash
-git clone https://github.com/PhantomNimbi/virtual-customs-tauri-app.git
-cd virtual-customs-tauri-app
+git clone https://github.com/PhantomNimbi/rule34video-tauri-app.git
+cd rule34video-tauri-app
 cargo install tauri-cli --version "^2" --locked
 cd src-tauri
 cargo tauri dev
 ```
-
-> If you are developing on mobile targets, follow the platform-specific setup guides in `docs/platforms/`.
 
 ### Build the app locally
 
@@ -97,22 +79,6 @@ For platform-specific builds, use the official Tauri targets:
 
 Use `--release` or other `cargo tauri` args as needed.
 
-## Versioning helper
-
-This repository includes a safe semantic version helper for release metadata and app manifests:
-
-- `.github/scripts/auto-version.sh` — calculates the next semantic version, updates `src-tauri/Cargo.toml` and `src-tauri/tauri.conf.json`, and can optionally create a git commit and tag.
-- Conventional Commits determine bump type: `feat` → minor, `fix` → patch, `BREAKING CHANGE` → major.
-- Documentation-only or tooling-only changes are handled as prerelease updates, so routine docs work does not force a public release.
-
-Example usage:
-
-```bash
-./.github/scripts/auto-version.sh --dry-run
-./.github/scripts/auto-version.sh
-./.github/scripts/auto-version.sh --commit
-```
-
 ---
 
 ## Project Structure
@@ -120,28 +86,6 @@ Example usage:
 - `src-tauri/` — Tauri application source code and Rust build configuration
 - `build.sh` — unified build helper for Linux, macOS, Android, iOS, and Windows
 - `build.bat` — Windows native build fallback
-- `docs/` — project documentation and platform guides
-
----
-
-## Documentation
-
-Detailed documentation is available in the `docs/` folder:
-
-- `docs/Getting-Started.md`
-- `docs/Installation.md`
-- `docs/Features.md`
-- `docs/platforms/Windows.md`
-- `docs/platforms/macOS.md`
-- `docs/platforms/Linux.md`
-- `docs/platforms/Android.md`
-- `docs/platforms/iOS.md`
-
----
-
-## Contributing
-
-See `docs/Contributing.md` for contribution guidelines, code style, and project workflow.
 
 ---
 

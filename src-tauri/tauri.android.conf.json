@@ -1,0 +1,10 @@
+{
+  "bundle": {
+    "android": {
+      "minSdkVersion": 24
+    },
+    "icon": [
+      "icons/icon.png"
+    ]
+  }
+}

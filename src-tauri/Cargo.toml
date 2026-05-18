@@ -1,0 +1,30 @@
+[package]
+name = "rule34video"
+version = "1.0.3"
+description = "Customize your Virtual World!"
+authors = ["The Back Room"]
+edition = "2021"
+
+[lib]
+name = "rule34video_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+path = "src/lib.rs"
+
+[[bin]]
+name = "rule34video"
+path = "src/main.rs"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-utils = { version = "2", features = [] }
+tauri-plugin-deep-link = "2"
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-notification = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-shell = ">=2.2.1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+url = "2"

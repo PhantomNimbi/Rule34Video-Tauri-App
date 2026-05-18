@@ -7,10 +7,9 @@
 ### 📝 Details
 
 - Native, privacy-minded browser wrapper for rule34video.com built with Tauri v2 and Rust.
-- Network- and DOM-level ad blocking to reduce distractions and improve page load behavior.
+- Network- and DOM-level ad blocking to reduce distractions and improve page load behavior. *Currently minimal at best. Could possibly benefit from being replaced with adguard based ad blocking for a better and more complete ad block support*.
 - Secure download interception with filename sanitization and safe save-path handling.
 - System tray integration on desktop platforms for background operation and quick restore.
 - Custom deep linking support via `rule43video://` and mobile app links.
 - Child window and popup management on desktop to keep navigation controlled and secure.
 - Cross-platform support across Windows, macOS, Linux, and Android.
-- App installers and packages published for supported desktop platforms and Android.

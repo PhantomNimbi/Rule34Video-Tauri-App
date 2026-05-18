@@ -1,8 +1,8 @@
 [package]
 name = "rule34video"
 version = "1.0.4"
-description = "Customize your Virtual World!"
-authors = ["The Back Room"]
+description = "Rule 34! If it exists, there is porn of it!"
+authors = ["Joshua V. Lewis"]
 edition = "2021"
 
 [lib]

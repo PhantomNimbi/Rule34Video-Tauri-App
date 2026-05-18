@@ -1,6 +1,6 @@
 # Rule34Video Tauri App
 
-**🚀 Current release:** v1.0.2 • **Updated:** 2026-05-09
+**🚀 Current release:** v1.0.3 • **Updated:** 2026-05-09
 
 A privacy-forward native wrapper for **rule34video.com** built with **Tauri 2** and **Rust**.
 
@@ -42,8 +42,8 @@ This repository includes both the Tauri source and native platform build helpers
 ### Local development
 
 ```bash
-git clone https://github.com/PhantomNimbi/rule34video-tauri-app.git
-cd rule34video-tauri-app
+git clone https://github.com/PhantomNimbi/Rule34Video-Tauri-App.git
+cd Rule34Video-Tauri-App
 cargo install tauri-cli --version "^2" --locked
 cd src-tauri
 cargo tauri dev

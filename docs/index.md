@@ -54,7 +54,7 @@ All of this without a separate browser, without extensions, and without the bloa
 
 ## 📂 Project layout
 
-```
+```sql
 rule34video-tauri-app/
 ├── src-tauri/
 │   ├── src/

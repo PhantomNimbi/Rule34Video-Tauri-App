@@ -90,21 +90,21 @@ cargo tauri build
 rule34video-tauri-app/
 ├── src-tauri/
 │   ├── src/
-│   │   ├── lib.rs                 # App setup, command registration
-│   │   ├── main.rs                # Binary entrypoint
+│   │   ├── lib.rs                         # App setup, command registration
+│   │   ├── main.rs                        # Binary entrypoint
 │   │   └── ext/
-│   │       ├── adblock.rs         # Adblock engine + JS injection
-│   │       ├── adblock_bundled.txt  # ~900 bundled filter rules
-│   │       ├── webview_intercept.rs  # WebView2 native interception (Win)
-│   │       ├── navigation.rs      # Link handling + init script builder
-│   │       ├── child_windows.rs   # Child webview windows (desktop)
-│   │       ├── context_menu.rs    # Native right-click menu (desktop)
-│   │       ├── downloads.rs       # Download interception
-│   │       ├── tray.rs            # System tray (desktop)
-│   │       ├── global_shortcuts.rs  # Global shortcuts (desktop)
-│   │       ├── webnotifications.rs  # Notification permissions
-│   │       ├── cloudfare.rs       # Anti-bot User-Agent
-│   │       └── universal_deep_link.rs  # Deep link handler
+│   │       ├── adblock.rs                 # Adblock engine + JS injection
+│   │       ├── adblock_bundled.txt        # ~900 bundled filter rules
+│   │       ├── webview_intercept.rs       # WebView2 native interception (Win)
+│   │       ├── navigation.rs              # Link handling + init script builder
+│   │       ├── child_windows.rs           # Child webview windows (desktop)
+│   │       ├── context_menu.rs            # Native right-click menu (desktop)
+│   │       ├── downloads.rs               # Download interception
+│   │       ├── tray.rs                    # System tray (desktop)
+│   │       ├── global_shortcuts.rs        # Global shortcuts (desktop)
+│   │       ├── webnotifications.rs        # Notification permissions
+│   │       ├── cloudfare.rs               # Anti-bot User-Agent
+│   │       └── universal_deep_link.rs     # Deep link handler
 │   ├── Cargo.toml
 │   ├── tauri.conf.json
 │   ├── tauri.windows.conf.json
@@ -112,7 +112,7 @@ rule34video-tauri-app/
 │   ├── tauri.linux.conf.json
 │   ├── tauri.ios.conf.json
 │   └── tauri.android.conf.json
-└── docs/                           # You are here
+└── docs/
 ```
 
 ---

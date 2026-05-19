@@ -57,7 +57,7 @@ Under the hood, it uses a **dual-layer adblock architecture**: a Rust-native `ad
 
 ## 🚀 Quick start
 
-```bash
+```sh
 # 1. Install Tauri CLI
 cargo install tauri-cli --version "^2" --locked
 
@@ -86,7 +86,7 @@ cargo tauri build
 
 ## 📁 Project structure
 
-```
+```sql
 rule34video-tauri-app/
 ├── src-tauri/
 │   ├── src/

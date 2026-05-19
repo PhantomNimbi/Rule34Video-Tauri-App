@@ -26,7 +26,7 @@ See the [official Tauri v2 prerequisites guide](https://v2.tauri.app/start/prere
 
 ## 🚀 Quick start
 
-```bash
+```sh
 # Clone the repository
 git clone https://github.com/your-username/rule34video-tauri-app.git
 cd rule34video-tauri-app
@@ -51,41 +51,40 @@ cargo tauri build --target aarch64-linux-android
 
 ## 📁 Project structure
 
-```
+```sql
 rule34video-tauri-app/
 ├── src-tauri/
 │   ├── src/
-│   │   ├── main.rs              # Binary entry point (Windows console suppress)
-│   │   ├── lib.rs                # App setup, run() for desktop + mobile
+│   │   ├── lib.rs                         # App setup, command registration
+│   │   ├── main.rs                        # Binary entrypoint
 │   │   └── ext/
-│   │       ├── mod.rs            # Module declarations with platform #[cfg]
-│   │       ├── adblock.rs        # Adblock engine + JS injection script
-│   │       ├── adblock_bundled.txt  # ~900 fast-start filter rules
-│   │       ├── webview_intercept.rs  # WebView2 native blocking (Win-only)
-│   │       ├── navigation.rs     # Init script composition + link handling
-│   │       ├── child_windows.rs  # Popup management (desktop-only)
-│   │       ├── context_menu.rs   # Native right-click (desktop-only)
-│   │       ├── downloads.rs      # Download interception + sanitization
-│   │       ├── tray.rs           # System tray (desktop-only)
-│   │       ├── global_shortcuts.rs  # Global hotkeys (desktop-only)
-│   │       ├── webnotifications.rs  # Notification permissions
-│   │       ├── cloudfare.rs      # User-agent spoofing
-│   │       └── universal_deep_link.rs  # rule34video:// handler
+│   │       ├── adblock.rs                 # Adblock engine + JS injection
+│   │       ├── adblock_bundled.txt        # ~900 bundled filter rules
+│   │       ├── webview_intercept.rs       # WebView2 native interception (Win)
+│   │       ├── navigation.rs              # Link handling + init script builder
+│   │       ├── child_windows.rs           # Child webview windows (desktop)
+│   │       ├── context_menu.rs            # Native right-click menu (desktop)
+│   │       ├── downloads.rs               # Download interception
+│   │       ├── tray.rs                    # System tray (desktop)
+│   │       ├── global_shortcuts.rs        # Global shortcuts (desktop)
+│   │       ├── webnotifications.rs        # Notification permissions
+│   │       ├── cloudfare.rs               # Anti-bot User-Agent
+│   │       └── universal_deep_link.rs     # Deep link handler
 │   ├── Cargo.toml
-│   ├── tauri.conf.json           # Main Tauri configuration
-│   ├── tauri.windows.conf.json   # Windows-specific config
-│   ├── tauri.macos.conf.json     # macOS-specific config
-│   ├── tauri.linux.conf.json     # Linux-specific config
-│   ├── tauri.ios.conf.json       # iOS-specific config
-│   └── tauri.android.conf.json   # Android-specific config
-└── docs/                         # You are here
+│   ├── tauri.conf.json
+│   ├── tauri.windows.conf.json
+│   ├── tauri.macos.conf.json
+│   ├── tauri.linux.conf.json
+│   ├── tauri.ios.conf.json
+│   └── tauri.android.conf.json
+└── docs/
 ```
 
 ---
 
 ## 🧪 Testing
 
-```bash
+```sh
 # Run all Rust unit tests
 cd src-tauri
 cargo test
@@ -137,35 +136,35 @@ cargo test script_contains_invoke
 
 ### Windows
 
-```bash
+```sh
 cargo tauri build
 # Output: target/release/rule34video.msi, rule34video Setup.exe
 ```
 
 ### macOS
 
-```bash
+```sh
 cargo tauri build --target aarch64-apple-darwin
 # Output: target/aarch64-apple-darwin/release/bundle/
 ```
 
 ### Linux
 
-```bash
+```sh
 cargo tauri build --target x86_64-unknown-linux-gnu
 # Output: target/x86_64-unknown-linux-gnu/release/bundle/
 ```
 
 ### Android
 
-```bash
+```sh
 cargo tauri build --target aarch64-linux-android
 # Requires: Android SDK + NDK configured in .cargo/config.toml
 ```
 
 ### iOS
 
-```bash
+```sh
 cargo tauri build --target aarch64-apple-ios
 # Requires: Xcode 15+, CocoaPods
 ```
